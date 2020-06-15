@@ -6,3 +6,4 @@ for i,v in pairs(a) do
     ie.inkey(true)
   end 
 end
+ie.print("done")
