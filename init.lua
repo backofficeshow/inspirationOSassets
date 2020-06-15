@@ -9,5 +9,6 @@ ie.print("Downloading WIFI manager app")
 a,b = ie.WIFIget("https://raw.githubusercontent.com/backofficeshow/inspirationOSassets/master/wifi.lua","wifi.lua")
 ie.print("Downloading MP3 player app")
 a,b = ie.WIFIget("https://raw.githubusercontent.com/backofficeshow/inspirationOSassets/master/mp3.lua","mp3.lua")
+RESET
 
   
