@@ -29,7 +29,7 @@ if type(value) == "number" then
     ie.print("Enter password:")
     value = nil
     local passwordstring = ""
-    while value != 0x0D do
+    while value ~= 0x0D do
       value = ie.inkey(true)  
       passwordstring = passwordstring + value
     end
