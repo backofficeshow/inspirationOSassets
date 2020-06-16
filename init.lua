@@ -1,4 +1,6 @@
 ie.print("First run script")
+ie.print("Downloading Startup Script")
+a,b = ie.WIFIget("https://raw.githubusercontent.com/backofficeshow/inspirationOSassets/master/startup.lua","startup.lua")
 ie.print("Downloading Startup Sound")
 a,b = ie.WIFIget("https://raw.githubusercontent.com/backofficeshow/inspirationOSassets/master/win95.mp3","startsound.mp3")
 ie.print("Downloading i2C Scan app")
@@ -9,6 +11,8 @@ ie.print("Downloading WIFI manager app")
 a,b = ie.WIFIget("https://raw.githubusercontent.com/backofficeshow/inspirationOSassets/master/wifi.lua","wifi.lua")
 ie.print("Downloading MP3 player app")
 a,b = ie.WIFIget("https://raw.githubusercontent.com/backofficeshow/inspirationOSassets/master/mp3.lua","mp3.lua")
+ie.print("Downloading Init Script")
+a,b = ie.WIFIget("https://raw.githubusercontent.com/backofficeshow/inspirationOSassets/master/init.lua","init.lua")
 ie.reset()
 
   
