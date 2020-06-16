@@ -32,7 +32,7 @@ if type(value) == "number" then
     value = nil
     local passwordstring = ""
     while value ~= 0x0D do
-      value = ie.inkey(true)  
+      value = string.char(ie.inkey(true)) 
       passwordstring = passwordstring + value
     end
     ie.print("Connecting")
