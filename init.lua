@@ -10,7 +10,7 @@ ie.print("First run script - connecting")
 a,b = ie.WIFIget("https://raw.githubusercontent.com/backofficeshow/inspirationOSassets/master/startup.lua","startup.lua")
 ie.print("Downloading Startup Script-" .. printStatus(a))
 
-a,b = ie.WIFIget("https://raw.githubusercontent.com/backofficeshow/inspirationOSassets/master/in95.mp3","startsound.mp3")
+a,b = ie.WIFIget("https://raw.githubusercontent.com/backofficeshow/inspirationOSassets/master/win95.mp3","startsound.mp3")
 ie.print("Downloading Startup Sound-" .. printStatus(a))
 
 a,b = ie.WIFIget("https://raw.githubusercontent.com/backofficeshow/inspirationOSassets/master/i2cscan.lua","i2cscan.lua")
