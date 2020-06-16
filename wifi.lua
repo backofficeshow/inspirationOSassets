@@ -3,6 +3,8 @@ page = 0
 
 function round(num) return math.floor(num+.5) end
 
+ie.print("Starting wifi scan")
+
 for i,v in ipairs(a) do
   ie.print(i .. " " .. v.ssid .. " " .. v.rssi .. " " .. v.channel .. " " .. v.enc .. " " .. v.mac)
   if #a > 5 then
@@ -20,7 +22,7 @@ ie.print("or any other key to exit")
 
 local value = nil
 while value == nil do
-  value = ie.inkey(true)  
+  value = string.char(ie.inkey(true))
 end
 
 if type(value) == "number" then
