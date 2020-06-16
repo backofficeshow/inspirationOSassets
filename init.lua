@@ -1,18 +1,35 @@
-ie.print("First run script")
-ie.print("Downloading Startup Script")
+function printStatus(value)
+  if value == true then
+    return "failed"
+  else
+    return "passed"
+  end
+end
+
+ie.print("First run script - connecting")
 a,b = ie.WIFIget("https://github.com/backofficeshow/inspirationOSassets/raw/master/startup.lua","startup.lua")
-ie.print("Downloading Startup Sound")
+ie.print("Downloading Startup Script " .. printStatus(a))
+
 a,b = ie.WIFIget("https://github.com/backofficeshow/inspirationOSassets/raw/master/win95.mp3","startsound.mp3")
-ie.print("Downloading i2C Scan app")
+ie.print("Downloading Startup Sound" .. printStatus(a))
+
 a,b = ie.WIFIget("https://github.com/backofficeshow/inspirationOSassets/raw/master/i2cscan.lua","i2cscan.lua")
-ie.print("Downloading dir command app")
+ie.print("Downloading i2C Scan app" .. printStatus(a))
+
 a,b = ie.WIFIget("https://github.com/backofficeshow/inspirationOSassets/raw/master/dir.lua","dir.lua")
-ie.print("Downloading WIFI manager app")
+ie.print("Downloading dir command app" .. printStatus(a))
+
 a,b = ie.WIFIget("https://github.com/backofficeshow/inspirationOSassets/raw/master/wifi.lua","wifi.lua")
-ie.print("Downloading MP3 player app")
+ie.print("Downloading WIFI manager app" .. printStatus(a))
+
 a,b = ie.WIFIget("https://github.com/backofficeshow/inspirationOSassets/raw/master/mp3.lua","mp3.lua")
-ie.print("Downloading Init Script")
+ie.print("Downloading MP3 player app" .. printStatus(a))
+
 a,b = ie.WIFIget("https://github.com/backofficeshow/inspirationOSassets/raw/master/init.lua","init.lua")
+ie.print("Downloading Init Script" .. printStatus(a))
+
+delay(2000)
+
 ie.reset()
 
   
