@@ -34,14 +34,15 @@ while value == nil do
 end
 
 if isNumeric(value) then
+  value = tonumber(value)
   if value > 0 and value < #a then
     ie.print("Config for:" .. a[value].ssid)
     ie.print("Enter password:")
-    value = nil
+    key = nil
     local passwordstring = ""
-    while value ~= 0x0D do
-      value = ie.inkey(true)
-      passwordstring = passwordstring + value
+    while key ~= "\r" do
+      key = ie.inkey(true)
+      passwordstring = passwordstring .. key
     end
     ie.print("Connecting")
     ie.WIFIconnect(a[value].ssid, passwordstring)
