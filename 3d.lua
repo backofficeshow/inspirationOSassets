@@ -152,7 +152,7 @@ while(true) do
 
   cube = rotate_shape(cube,a,rot) -- Rotate our cube
 
-  ie.clear(true)
+  ie.clear()
   draw_shape(cube) -- Draw the cube
   ie.flip()
 end
