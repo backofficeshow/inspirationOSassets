@@ -160,7 +160,7 @@ while(true) do
 		playsound = true
 	end
 
-	if ie.getkey("q") then goto END end
+	if ie.getkey("q") then return(true) end
 
 	if shipx > 1023 then shipx = 0 end
 	if shipx < 0 then shipx = 1023 end

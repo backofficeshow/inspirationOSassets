@@ -142,7 +142,7 @@ while(true) do
 	rot = rot -0.01
   end
   if key =="x" then 
-	goto END
+	return(true)
   end
   t = t - 1 -- Decrease time until next angle change
   if t <= 0 then -- If t is 0 then change the random angle and restart the timer

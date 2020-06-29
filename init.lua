@@ -28,7 +28,7 @@ while connected ~= true do
 	connected = ie.WIFIconnected()
 	if millis() - starttime > 5000 then 
 		ie.print("Connection Timeout")
-		goto END
+		return(false)
 	end
 end
 
