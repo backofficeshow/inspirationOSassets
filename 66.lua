@@ -1,3 +1,11 @@
+--[[
+Order 66
+(c)2020 Andrew Armstrong @backofficeshow Andy Beer @sadken
+
+Tests the beeper routines and screen display by playing an
+iconic tune!
+]]
+
 print=ie.print
 beep=ie.beep
 
@@ -33,18 +41,18 @@ function firstSection()
   beep(AMP,a, 450)
   beep(AMP,rest,50)
   beep(AMP,a, 450)
-  beep(AMP,rest,50)    
+  beep(AMP,rest,50)
   beep(AMP,a, 450)
   beep(AMP,rest,50)
   beep(AMP,f, 350)
-  beep(AMP,cH, 150)  
+  beep(AMP,cH, 150)
   beep(AMP,a, 500)
   beep(AMP,f, 350)
   beep(AMP,cH, 150)
   beep(AMP,a, 650)
-  
+
   beep(AMP,rest,500)
- 
+
   beep(AMP,eH, 450)
   beep(AMP,rest,50)
   beep(AMP,eH, 450)
@@ -57,10 +65,10 @@ function firstSection()
   beep(AMP,f, 350)
   beep(AMP,cH, 150)
   beep(AMP,a, 650)
- 
+
   beep(AMP,rest,500)
 end
- 
+
 function secondSection()
   beep(AMP,aH, 500)
   beep(AMP,a, 300)
@@ -69,19 +77,19 @@ function secondSection()
   beep(AMP,gSH, 325)
   beep(AMP,gH, 175)
   beep(AMP,fSH, 125)
-  beep(AMP,fH, 125)    
+  beep(AMP,fH, 125)
   beep(AMP,fSH, 250)
- 
+
   beep(AMP,rest,325)
- 
+
   beep(AMP,aS, 250)
   beep(AMP,dSH, 500)
-  beep(AMP,dH, 325)  
-  beep(AMP,cSH, 175)  
-  beep(AMP,cH, 125)  
-  beep(AMP,b, 125)  
-  beep(AMP,cH, 250)  
- 
+  beep(AMP,dH, 325)
+  beep(AMP,cSH, 175)
+  beep(AMP,cH, 125)
+  beep(AMP,b, 125)
+  beep(AMP,cH, 250)
+
   beep(AMP,rest,325)
 end
 
@@ -95,12 +103,12 @@ secondSection()
 
 print("They are looking scary!")
 
-beep(AMP,f, 250)  
-beep(AMP,gS, 500)  
-beep(AMP,f, 350)  
+beep(AMP,f, 250)
+beep(AMP,gS, 500)
+beep(AMP,f, 350)
 beep(AMP,a, 125)
 beep(AMP,cH, 500)
-beep(AMP,a, 375)  
+beep(AMP,a, 375)
 beep(AMP,cH, 125)
 beep(AMP,eH, 650)
 
@@ -113,13 +121,13 @@ secondSection()
 
 print("Arghhhhhhh")
 
-beep(AMP,f, 250)  
-beep(AMP,gS, 500)  
-beep(AMP,f, 375)  
+beep(AMP,f, 250)
+beep(AMP,gS, 500)
+beep(AMP,f, 375)
 beep(AMP,cH, 125)
-beep(AMP,a, 500)  
-beep(AMP,f, 375)  
+beep(AMP,a, 500)
+beep(AMP,f, 375)
 beep(AMP,cH, 125)
-beep(AMP,a, 650)  
+beep(AMP,a, 650)
 
 print("Thank you!")

@@ -1,6 +1,6 @@
 j = 0 
 while(ie.inkey()=="") do 
-	ie.clear() 
+	ie.clear(true) 
 	j=j+10 
 	if(j>512) then j=0 end
 	for i=1, 512, 1 do 
