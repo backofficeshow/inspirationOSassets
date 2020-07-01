@@ -11,4 +11,8 @@ down on your IE on powerup.
 if ie.SDexists("win95.mp3") then
   ie.playmp3("win95.mp3")
 end
+ie.configTime()
+local a = ie.getTime("%A, %B %d %Y %H:%M:%S")
+ie.print(a)
 ie.print("Ready to go!")
+

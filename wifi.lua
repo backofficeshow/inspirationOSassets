@@ -26,7 +26,7 @@ page = 0
 
 for i,v in ipairs(a) do
   ie.print(i .. " " .. v.ssid .. " " .. v.rssi .. " " .. v.channel .. " " .. v.enc .. " " .. v.mac)
-  if #a > 5 then
+  if #a > 4 then
     if i % 4 == 0 then
       page = page + 1
       ie.print("Page " .. page .. " of " .. round(#a / 4))
@@ -51,7 +51,7 @@ end
 
 if isNumeric(value) then
   value = tonumber(value)
-  if value > 0 and value < #a then
+  if value > 0 and value <= #a then
     ie.print("Config for:" .. a[value].ssid)
     ie.print("Enter password:")
     key = nil
