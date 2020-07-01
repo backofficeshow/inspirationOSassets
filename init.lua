@@ -30,7 +30,8 @@ files = {
 	{repoLocation .. "dir.lua","dir.lua"},
 	{repoLocation .. "wifi.lua","wifi.lua"},
 	{repoLocation .. "mp3.lua","mp3.lua"},
-	{repoLocation .. "init.lua","init.lua"}}
+	{repoLocation .. "init.lua","init.lua"},
+	{repolocation .. "clock.lua","clock.lua"}}
 
 ie.clear()
 ie.print("First run script - connecting")
